@@ -1,0 +1,14 @@
+<ActionBar title="Contactos">
+    <NavigationButton text="Go Back" android.systemIcon="ic_menu_back" (tap)="goBack()"></NavigationButton>
+</ActionBar>
+
+<StackLayout>
+    <ListView [items]="contactList" (itemTap)="onItemTap($event)" class="list-group">
+        <ng-template let-contact="item" let-i="index" let-odd="odd" let-even="even">
+            <StackLayout height="80" class="list-item">
+                <Label col="0" margin="6" class="nickname"  [text]="contact.nickname"></Label>
+                <Label col="1" margin="6" [text]="contact.email"></Label>
+            </StackLayout>
+        </ng-template>
+    </ListView>
+</StackLayout>

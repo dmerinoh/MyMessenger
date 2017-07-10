@@ -1,0 +1,10 @@
+<ActionBar title="Contacts">
+    <NavigationButton text="Go Back" android.systemIcon="ic_menu_back" (tap)="goBack()"></NavigationButton>
+</ActionBar>
+
+<StackLayout>
+    <Button class="menu-item btn btn-primary btn-rounded-sm" text="Contacts" (tap)="goToContacts()"></Button>
+    <Button class="menu-item btn btn-primary btn-rounded-sm" text="Audio" (tap)="goToAudio()"></Button>
+    <Button class="menu-item btn btn-primary btn-rounded-sm" text="Recorder" (tap)="goToRecorder()"></Button>
+    <Button class="menu-item btn btn-primary btn-rounded-sm" text="Player" (tap)="goToPlayer()"></Button>
+</StackLayout>

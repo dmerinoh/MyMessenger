@@ -1,0 +1,23 @@
+.contact-list{
+    margin-top: 30px !important;
+}
+
+.odd {
+    background-color: lightgray;
+    border-bottom: 1px solid darkgray;
+}
+
+.list-item{
+    background-color: lightgray !important;
+    border-bottom: 1px solid darkgray !important;
+}
+
+.even {
+    background-color: white;
+    border-bottom: 1px solid darkgray;
+}
+
+.nickname{
+    font-weight: bold;
+    color: black;
+}
