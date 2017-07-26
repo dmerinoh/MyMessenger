@@ -13,6 +13,7 @@ var http_1 = require("nativescript-angular/http");
 var router_1 = require("nativescript-angular/router");
 var app_routing_1 = require("./app.routing");
 var ng2_simple_timer_1 = require("ng2-simple-timer");
+var animations_1 = require("nativescript-angular/animations");
 var AppModule = (function () {
     function AppModule() {
     }
@@ -22,6 +23,7 @@ AppModule = __decorate([
     core_1.NgModule({
         imports: [
             nativescript_module_1.NativeScriptModule,
+            animations_1.NativeScriptAnimationsModule,
             router_1.NativeScriptRouterModule,
             forms_1.NativeScriptFormsModule,
             http_1.NativeScriptHttpModule,
@@ -29,7 +31,10 @@ AppModule = __decorate([
         ],
         declarations: [app_component_1.AppComponent, app_routing_1.navigatableComponents],
         schemas: [core_1.NO_ERRORS_SCHEMA],
-        providers: [page_1.Page, settings_1.Settings, email_1.EmailComposer, toast_1.ToastUtils, contacts_1.ContactsUtils, ng2_simple_timer_1.SimpleTimer],
+        providers: [
+            page_1.Page, settings_1.Settings, email_1.EmailComposer, toast_1.ToastUtils, contacts_1.ContactsUtils, ng2_simple_timer_1.SimpleTimer,
+            { provide: core_1.NgModuleFactoryLoader, useClass: router_1.NSModuleFactoryLoader }
+        ],
         bootstrap: [app_component_1.AppComponent]
     })
 ], AppModule);

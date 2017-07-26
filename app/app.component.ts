@@ -4,7 +4,9 @@ import { RouterExtensions } from "nativescript-angular";
 @Component({
   selector: "my-app",
   template: `
-      <page-router-outlet></page-router-outlet>
+      <GridLayout>
+          <page-router-outlet></page-router-outlet>
+      </GridLayout>
   `
 })
 export class AppComponent {

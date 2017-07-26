@@ -14,7 +14,7 @@ var AppComponent = (function () {
 AppComponent = __decorate([
     core_1.Component({
         selector: "my-app",
-        template: "\n      <page-router-outlet></page-router-outlet>\n  "
+        template: "\n      <GridLayout>\n          <page-router-outlet></page-router-outlet>\n      </GridLayout>\n  "
     }),
     __metadata("design:paramtypes", [nativescript_angular_1.RouterExtensions])
 ], AppComponent);
