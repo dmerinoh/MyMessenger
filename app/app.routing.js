@@ -6,7 +6,9 @@ var audio_component_1 = require("./pages/audio/audio.component");
 var recorder_component_1 = require("./pages/recorder/recorder.component");
 var player_component_1 = require("./pages/player/player.component");
 var tabs_1 = require("./pages/tabs/tabs");
+var bottombar_1 = require("./pages/bottombar/bottombar");
 exports.routes = [
+    { path: "", component: bottombar_1.BottomBarComponent },
     { path: "", component: tabs_1.TabsComponent },
     { path: "home", component: home_component_1.HomeComponent },
     { path: "contacts", component: contacts_component_1.ContactsComponent },
@@ -16,6 +18,7 @@ exports.routes = [
 ];
 exports.navigatableComponents = [
     tabs_1.TabsComponent,
+    bottombar_1.BottomBarComponent,
     home_component_1.HomeComponent,
     contacts_component_1.ContactsComponent,
     audio_component_1.AudioComponent,
