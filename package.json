@@ -20,12 +20,18 @@
     "@angular/router": "~4.1.0",
     "nativescript-angular": "~3.1.0",
     "nativescript-audio": "^3.5.0",
+    "nativescript-bottombar": "^3.0.4",
+    "nativescript-camera": "^3.0.1",
+    "nativescript-chatview": "^1.0.3",
     "nativescript-contacts": "^1.5.3",
     "nativescript-email": "^1.4.1",
+    "nativescript-imagepicker": "^3.0.2",
     "nativescript-secure-storage": "^2.1.1",
     "nativescript-snackbar": "^1.1.6",
+    "nativescript-telerik-ui": "^3.0.4",
     "nativescript-theme-core": "~1.0.2",
     "nativescript-toasts": "^1.0.3",
+    "nativescript-videorecorder": "^2.0.0",
     "ng2-simple-timer": "^1.3.1",
     "reflect-metadata": "~0.1.8",
     "rxjs": "~5.3.0",
@@ -38,6 +44,6 @@
     "babylon": "6.4.5",
     "lazy": "1.0.11",
     "nativescript-dev-typescript": "~0.5.0",
-    "typescript": "~2.2.1"
+    "typescript": "^2.3.2"
   }
 }
